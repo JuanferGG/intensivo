@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(219, 30%, 18%);
+    color: hsl(0, 0%, 100%);
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Righteous', cursive;
+}
+main{
+    width: 100vw;
+    height: fit-content;
+}
+nav{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+    margin-top: 2em;
+}
+nav .logo{
+    margin-left: 3em;
+}
+nav .navegation{
+    position: absolute;
+    right: 3em;
+}
+nav .navegation ul{
+    display: flex;
+    gap: 2.4em;
+}
+nav .navegation ul li{
+    list-style: none;
+}
+nav .navegation ul li a{
+    color: hsl(0, 0%, 100%);
+    font-weight: 100;
+    text-decoration: underline transparent;
+
+    transition: all .5s;
+}
+nav .navegation ul li a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.home{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home img{
+    width: 40%;
+}
+.home p{
+    width: 40%;
+    text-align: center;
+    font-size: 1.5em;
+}
+.home h2{
+    width: 60%;
+    text-align: center;
+    font-size: 2em;
+}
+.home button{
+    padding: .8em 7em;
+    background-color: hsl(198, 68%, 56%);
+    color: white;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2em;
+    cursor: pointer;
+    transition: all .5s;
+}
+.home button:hover{
+    background-color: hsl(198, 78%, 69%);
+}
+.curvy{
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    top: 10em;
+}
+/* TODO: Services */
+.services{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+    left: -1em;
+    padding-bottom: 5em;
+}
+.services .container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+}
+.services .container .services-box{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.services .container .services-box img{
+    width: 30%;
+    height: 43%;
+}
+
+/* TODO location */
+
+.location{
+    width: 100vw;
+    height: fit-content;
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+    left: -1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    padding-bottom: 5em;
+}
+.location .info{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1em;
+    gap: 1em;
+}
+.location .info button{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all .5s;
+}
+.location .info button:hover{
+    border-bottom: 2px solid white;
+}
+
+/* TODO experiences */
+
+.experiences{
+    width: 100vw;
+    height: fit-content;
+    background-color: hsl(218, 28%, 13%);
+    margin: 0;
+}
+
+
+/* TODO Responsive */
+@media (max-width: 750px) {
+    .home img{
+        width: 80%;
+    }
+    .home p{
+        width: 80%;
+    }
+    .services .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .location{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    .location img{
+        width: 400px;
+    }
+}

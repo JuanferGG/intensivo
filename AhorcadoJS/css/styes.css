@@ -1,0 +1,33 @@
+h2{
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#longWord{
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    gap: 1em;
+}
+#longWord .letter{
+    width: 30px;
+    height: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    color: red;
+    user-select: none;
+}
+#longWord .letterOK{
+    width: 30px;
+    height: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    color: blue;
+}
